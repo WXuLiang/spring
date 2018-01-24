@@ -1,0 +1,26 @@
+group 'spring'
+version '1.0-SNAPSHOT'
+
+apply plugin: 'java'
+apply plugin: 'war'
+
+sourceCompatibility = 1.8
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    /*spring依赖*/
+    compile group: 'org.springframework', name: 'spring-webmvc', version: '4.3.8.RELEASE'
+
+
+    
+
+    /*spring测试*/
+    testCompile group: 'org.springframework', name: 'spring-test', version: '4.3.8.RELEASE'
+
+
+
+    testCompile group: 'junit', name: 'junit', version: '4.12'
+}
