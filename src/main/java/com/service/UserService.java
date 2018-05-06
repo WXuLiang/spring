@@ -13,7 +13,7 @@ public class UserService {
     @Autowired
     private UserBean userBean;
     public void printUser(){
-        userBean.setName("张三");
+        userBean.setName("张三2");
         System.out.println(userBean);
     }
 }
